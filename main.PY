@@ -40,6 +40,8 @@ def main():
         # Le joueur a fait Ctrl+C ou Ctrl+D : ce n'est pas une vraie erreur
         afficher_message("")
 
+        
+
     except ErreurBase as exc:
         # Notre erreur personnalisée (MongoDB éteint, base vide...)
         afficher_message(f"\n  ❌  {exc}\n")
